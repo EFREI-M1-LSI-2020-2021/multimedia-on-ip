@@ -1,6 +1,6 @@
 require("dotenv").config();
 import { SessionsClient } from '@google-cloud/dialogflow';
-const uuid = require("uuid");
+import { v4 } from 'uuid';
 const RainbowSDK = require('rainbow-node-sdk');
 
 const options = {
@@ -30,7 +30,7 @@ const options = {
 
 const projectId = process.env.PROJECT_ID;
 const credentials_file_path = './small_talk.json';
-const sessionId = uuid.v4();
+const sessionId = v4();
 
 const rainbowSDK = new RainbowSDK(options);
 
