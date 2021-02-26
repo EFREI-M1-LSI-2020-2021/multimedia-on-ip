@@ -1,0 +1,5 @@
+node_modules
+dist
+.env
+conf.json
+conf.md
