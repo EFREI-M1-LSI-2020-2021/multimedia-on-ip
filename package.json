@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/EFREI-M1-LSI-2020-2021/multimedia-on-ip#readme",
   "dependencies": {
-    "dialogflow": "^1.2.0",
+    "@google-cloud/dialogflow": "^3.3.0",
     "dotenv": "^8.2.0",
     "rainbow-node-sdk": "^1.84.0",
     "uuid": "^8.3.2"

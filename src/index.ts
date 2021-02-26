@@ -1,5 +1,5 @@
 require("dotenv").config();
-const dialogflow = require("dialogflow");
+import { SessionsClient } from '@google-cloud/dialogflow';
 const uuid = require("uuid");
 const RainbowSDK = require('rainbow-node-sdk');
 
@@ -46,7 +46,7 @@ rainbowSDK.events.on('rainbow_onmessagereceived', async (msg) => {
 async function runSample(projectId: string, query: string) {
   const languageCode = "en-US";
 
-  const sessionClient = new dialogflow.SessionsClient({
+  const sessionClient = new SessionsClient({
     projectId,
     keyFilename: credentials_file_path,
   });
@@ -65,7 +65,7 @@ async function runSample(projectId: string, query: string) {
   console.log("sessionClient");
   console.log(sessionClient);*/
 
-  const sessionPath = sessionClient.sessionPath(projectId, sessionId);
+  const sessionPath = sessionClient.projectAgentSessionPath(projectId, sessionId);
 
   const request = {
     session: sessionPath,
