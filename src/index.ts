@@ -51,20 +51,6 @@ async function runSample(projectId: string, query: string) {
     keyFilename: credentials_file_path,
   });
 
-  /*console.log(
-    "----------------------------------RequetAgent-------------------------------------"
-  );
-  console.log("Message  à envoyer à Agent Dialogflow");
-  console.log(query);
-  console.log("projectId");
-  console.log(projectId);
-  console.log("sessionId");
-  console.log(sessionId);
-  console.log("credentials_file_path");
-  console.log(credentials_file_path);
-  console.log("sessionClient");
-  console.log(sessionClient);*/
-
   const sessionPath = sessionClient.projectAgentSessionPath(projectId, sessionId);
 
   const request = {
@@ -78,9 +64,6 @@ async function runSample(projectId: string, query: string) {
   };
 
   const responses = await sessionClient.detectIntent(request);
-
-  //console.log("Detected intent by Agent Dialogflow and answer");
-  //console.log(responses);
 
   const result = responses[0].queryResult;
 
