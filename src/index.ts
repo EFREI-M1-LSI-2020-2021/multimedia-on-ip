@@ -39,6 +39,13 @@ rainbowSDK.start().then( () => {
 });
 
 rainbowSDK.events.on('rainbow_onmessagereceived', async (msg) => {
+
+  // Partie 1
+  // console.log(msg);
+  // rainbowSDK.im.sendMessageToJid("Message bien reçu", msg.fromJid);
+  // rainbowSDK.im.sendMessageToJid(msg.content, msg.fromJid);
+
+  // Partie 2
   const response = await runSample(projectId, msg.content);
   rainbowSDK.im.sendMessageToJid(response, msg.fromJid);
 });
