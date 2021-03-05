@@ -1,43 +1,6 @@
 # multimedia-on-ip
-
-## Jean-Michel REMEUR & Thomas LACAZE
-## EFREI M1 APP LSI
-
-## Custom hi
-
-### Dialogflow configuration
-
-![](images/hi-conf.png)
-
-### Responses
-
-![](images/hi-fr.png)
-![](images/hi.png)
-
-## Ask name and phone number
-
-### Dialogflow configuration
-
-![](images/name-phone-conf.png)
-### Responses
-
-![](images/name-phone.png)
-
-## Messenger
-
-### Configuration
-
-![](images/messenger-webhook.png)
-![](images/messenger-tester.png)
-
-### Dialogflow configuration
-![](images/messenger-conf.png)
-
-### Responses
-
-![](images/messenger.png)
-
-## Code (Typescript)
+# Jean-Michel REMEUR & Thomas LACAZE -  EFREI M1 APP LSI
+## Code partie I et II en Typescript
 
 ```typescript
 require("dotenv").config();
@@ -187,3 +150,34 @@ LOGIN=
 PASSWORD=
 PROJECT_ID=
 ```
+### Dialogflow configuration
+
+![](images/hi-conf.png)
+
+### Responses
+
+![](images/hi-fr.png)
+![](images/hi.png)
+
+## Ask name and phone number
+
+### Dialogflow configuration
+
+![](images/name-phone-conf.png)
+### Responses
+
+![](images/name-phone.png)
+
+## Messenger
+
+### Configuration
+
+![](images/messenger-webhook.png)
+![](images/messenger-tester.png)
+
+### Dialogflow configuration
+![](images/messenger-conf.png)
+
+### Responses
+
+![](images/messenger.png)
