@@ -16,15 +16,15 @@ const options = {
     appSecret: process.env.APP_SECRET
   },
   logs: {
-    enableConsoleLogs: true,              
-    enableFileLogs: false,                
+    enableConsoleLogs: true,
+    enableFileLogs: false,
     file: {
       path: '/var/tmp/rainbowsdk/',
-      level: 'debug'                    
+      level: 'debug'
     }
   },
   im: {
-    sendReadReceipt: true   
+    sendReadReceipt: true
   }
 }
 
