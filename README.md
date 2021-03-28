@@ -1,4 +1,4 @@
-# multimedia-on-ip
+# Multimedia on IP
 # Jean-Michel REMEUR & Thomas LACAZE -  EFREI M1 APP LSI
 ## Code partie I et II en Typescript
 
